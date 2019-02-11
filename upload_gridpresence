@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#aws s3 ls --profile grid.presence
+aws s3 sync gridpresence.com/ s3://gridpresence.com --profile grid.presence --region eu-west-1 --acl public-read
